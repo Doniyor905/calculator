@@ -1,0 +1,88 @@
+@import url(./font/font.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat";
+}
+
+.calc__numbers {
+    display: grid;
+    gap: 15px;
+    height: 600px;
+    width: 100%;
+    grid-template-areas: 
+    "clear clear clear` bolu"
+    "yetti sakiz toqiz plus" 
+    "tort besh olti kopaytiru" 
+    "uch ikki bir ayiru" 
+    "nol barobar barobar barobar" 
+    ;
+}
+
+.item1 {grid-area: clear;}
+.item3 {grid-area: bolu;}
+.item4 {grid-area: yetti;}
+.item5 {grid-area: sakiz;}
+.item6 {grid-area: toqiz;}
+.item7 {grid-area: plus;}
+.item8 {grid-area: olti;}
+.item9 {grid-area: besh;}
+.item10 {grid-area: tort;}
+.item11 {grid-area: kopaytiru;}
+.item12 {grid-area: bir;}
+.item13 {grid-area: ikki;}
+.item14 {grid-area: uch;}
+.item15 {grid-area: ayiru;}
+.item16 {grid-area: nol;}
+.item17 {grid-area: barobar;}
+
+
+
+.calc__number {
+    background-color: #fff;
+    border: 2px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.calc__number:hover {
+    background-color: #f2f2f2;
+}
+
+.calc {
+    width: 600px;
+}
+
+.calc__inner {
+    width: 400px;
+}
+
+.cal__result {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(153, 153, 153);
+    background-color: #f2f2f2;
+    outline: none;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
