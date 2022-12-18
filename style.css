@@ -56,10 +56,6 @@ body {
     background-color: #f2f2f2;
 }
 
-.calc {
-    width: 600px;
-}
-
 .calc__inner {
     width: 400px;
 }
@@ -80,9 +76,31 @@ body {
 }
 
 .calc {
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+    .calc {
+        width: 100%;
+    }
+    .calc__numbers {
+        height: 500px;
+    }
+}
+@media(max-width: 436px) {
+    .calc {
+        width: 100%;
+    }
+
+    .calc__inner {
+        width: 95%;
+    }
+    .calc__numbers  {
+        height: 400px;
+    }
 }
